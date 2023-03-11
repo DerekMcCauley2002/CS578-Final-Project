@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap');
+
+body {
+    color: #333 !important;
+    background: #7D9DDD;
+    font-family: Georgia, serif;
+    margin: 0;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    margin-right: 20px;
+}
+
+a {
+    color: #74CCD3;
+}
+
+h1,
+h2 {
+    color: #F5F4EF;
+    font-family: 'Zilla Slab', serif;
+    text-shadow: 0px 5px 10px rgba(0, 0, 0, 1);
+    overflow: hidden;
+    margin: 0;
+}
+
+p {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 21px;
+}
+
+.main-navigation {
+    background: #6376C1;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.main-navigation a {
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    width: 200px;
+    margin-left: 210px;
+    padding-top: 10px;
+}
+
+.dropdown li {
+    display: block;
+    background-color: #6376C1;
+    padding: 5px 10px;
+    border-top: 1px solid white;
+}
+
+.dropdown-link:hover .dropdown {
+    display: block;
+}
+
+.dropdown-link::after{
+    content: "+";
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #74CCD3 !important;
+    text-decoration: underline !important;
+}
+
+.nav-link:visited {
+    color: purple;
+}
+
+.active {
+    color: #74CCD3 !important;
+    text-decoration: underline !important;
+}
+
+.title-header {
+    background-image: url(images/header_bg.jpg);
+    background-size: 300px;
+    background-repeat: repeat-x;
+    padding: 100px;
+    text-align: center;
+    margin-top: 38px;
+}
+
+.main-content {
+    background-color: white;
+    border-style: solid;
+    border-color: #6376C1;
+    border-width: 2px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5); /* x-axis, y-axis, blur, color */
+    width: 600px;
+    margin: 20px auto;
+    padding: 20px 40px;
+}
+
+.button {
+    background-color: #666;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 250px;
+    border-radius: 10px;
+    border-bottom: 10px solid black;
+}
+
+.button:hover {
+    background-color: rgb(140, 98, 202);
+    color: white;
+    border-bottom: 10px solid rgb(141, 46, 200);
+}
+
+.button:active {
+    background-color: rgb(89, 89, 221);
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    border-bottom: 0px solid black;
+}
+
+.main-content img {
+    width: 50%;
+}
+
+.main-content img:nth-child(3) {
+    width: 100%;
+}
