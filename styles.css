@@ -1,0 +1,151 @@
+
+body {
+    color: #333 !important;
+    background: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    margin-right: 20px;
+}
+
+a {
+    color: #2573af;
+}
+
+h1{
+    color: #25AFA7;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
+    overflow: hidden;
+    margin: 0;
+}
+
+h2 {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 1);
+    overflow: hidden;
+    margin: 0;
+}
+
+h3{
+    color: #25AFA7;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    margin: 0;
+}
+p {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 21px;
+}
+
+.main-navigation {
+    background: #25AFA7;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+
+.main-navigation a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo{
+    margin: 0;
+    height: 30px;
+    width: 150px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #0dd3f6 !important;
+    text-decoration: underline !important;
+}
+
+.nav-link:visited {
+    color: #25AFA7;
+}
+
+.active {
+    color: #2573af !important;
+    text-decoration: underline !important;
+}
+
+.title-header {
+    background-image: url(images/header_bg.jpg);
+    background-size: 100%;
+    background-repeat: auto;
+    padding: 100px;
+    text-align: center;
+    margin-top: 38px;
+}
+
+.main-content {
+    background-color: white;
+    border-style: solid;
+    border-color: #25AFA7;
+    border-width: 2px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5); /* x-axis, y-axis, blur, color */
+    width: 600px;
+    margin: 20px auto;
+    padding: 20px 40px;
+}
+
+.button {
+    background-color: #666;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 180px;
+    border-radius: 10px;
+    border-bottom: 10px solid black;
+    transform: translateY(0px);
+    transition: all 400ms;
+    
+}
+
+.button:hover {
+    background-color: #25AFA7;
+    color: white;
+    border-bottom: 10px solid #2573af;
+    transform: translateY(-10px);
+}
+
+.button:active {
+    background-color: #25AFA7;
+    color: white;
+    border-bottom: 0px solid black;
+    transform: translateY(10px);
+}
+
+
+
