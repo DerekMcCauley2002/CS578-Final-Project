@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+
+<head>
+    <title> PawPost </title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+
+</head>
+
+<body>
+    <!-- This UL is for the main navigation -->
+    <div id="main-navigation" class="main-navigation">
+        <ul>
+            <img class="logo" src="logo.png">
+            <li> <a class="nav-link" href="homepage.html"> Home </a> </li>
+            <li> <a class="nav-link" href="setup.html"> Device Set Up </a> </li>
+            <li> <a class="nav-link" href="signup.html"> Sign Up </a> </li>
+            <li> <a class="nav-link active" href="login.html"> Log In </a> </li>
+            <li> <a class="nav-link" href="statistics.html"> Statistics </a> </li>
+            
+        </ul>
+    </div>
+
+    <div id="title-header" class="title-header">
+        <h1> Log In </h1>
+    </div>
+
+    <form action="action_page.php" method="post">
+        
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+      
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+      
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+
+</body>
+
+</html>
