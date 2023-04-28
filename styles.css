@@ -154,12 +154,26 @@ form {
   
   /* Full-width inputs */
   input[type=text], input[type=password] {
-    width: 100%;
+    width: 20%;
     padding: 12px 20px;
     margin: 8px 0;
-    display: inline-block;
+    display: flex;
     border: 1px solid #ccc;
     box-sizing: border-box;
+  }
+
+  div input {
+    display: inline;
+    margin-bottom: 20px;
+  }
+
+  div br {
+    display: inline;
+  }
+
+  div select {
+    margin-bottom: 20px;
+    font-size: medium;
   }
   
   /* Set a style for all buttons */
@@ -222,10 +236,10 @@ span.psw {
 
 /* Full-width input fields */
   input[type=text], input[type=password] {
-  width: 100%;
+  width: 20%;
   padding: 15px;
   margin: 5px 0 22px 0;
-  display: inline-block;
+  display: flex;
   border: none;
   background: #f1f1f1;
 }

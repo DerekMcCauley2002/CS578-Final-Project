@@ -27,15 +27,22 @@
         <h1> Set-up Device </h1>
     </div>
     <div id="input-form" class="input-form"> <!--bound to change with existing styles-->
-        <form id="device_setup" class="device_setup" action="setup_success.html">
-            <label for="device_id">Device ID:</label>
-            <input type="text" id="device_id" name="Device ID">
-            <label for="">Device Type (Water or Food)</label>
-            <li>
-                <input type="checkbox" id="type_water" name="Water Bowl">
-                <input type="checkbox" id="type_food" name="Food Bowl">
-            </li>
-            <input type="text" id="pet_name" name="Pet Name">
+    <body>
+        <form id="device_setup" class="device_setup" action="{% url 'setup_confirmation' %}" method='POST'>
+            <div style="margin-left: 10%;">
+                <label for="device_id">Device ID:</label>
+                <input type="text" id="device_id" name="Device ID" required>
+                <label for="device_type">Device Type:</label>
+                <select name="device_type" id="device_type" required>
+                        <option selected value="food">Food</option>
+                        <option value="water">Water</option>
+                </select>
+                <br>
+                <label for="pet_name">Pet Name:</label>
+                <input type="text" id="pet_name" name="Pet Name">
+                <input type="submit" id="submit_button" value="Create Device">
+            </div>
         </form>
+    </body>
     </div>
 
