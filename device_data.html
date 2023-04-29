@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GPIO Data</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        setInterval(function() {
+          $.getJSON('/gpio', function(data) {
+            $('#data').text(data.data);
+          });
+        }, 1000);
+      });
+    </script>
+  </head>
+  <body>
+    <h1>GPIO Data</h1>
+    <p>The current state of the GPIO pin is: <span id="data"></span></p>
+  </body>
+</html>
