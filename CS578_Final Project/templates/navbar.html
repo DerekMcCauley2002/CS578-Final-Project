@@ -1,0 +1,13 @@
+<!-- This UL is for the main navigation -->
+<div id="main-navigation" class="main-navigation">
+	<ul>
+		<img class="logo" src="{{ url_for('static', filename='logo') }}">
+		<li> <a class="nav-link active" href="/"> Home </a> </li>
+		<li> <a class="nav-link" href="/setup"> Device Set Up </a> </li>
+		<li> <a class="nav-link" href="/signup"> Sign Up </a> </li>
+		<li> <a class="nav-link" href="/login"> Log In </a> </li>
+		<li> <a class="nav-link" href="/statistics"> Statistics </a> </li>
+	</ul>
+</div>
+    {% block page_content %}
+    {% endblock page_content %}

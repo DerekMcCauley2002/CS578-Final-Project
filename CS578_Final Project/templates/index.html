@@ -1,0 +1,39 @@
+{% extends 'navbar.html' %}
+<!DOCTYPE html>
+<html>
+{% block page_content %}
+<head>
+    <title> PawPost </title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='responsive.css') }}">
+    
+
+</head>
+
+<body>
+    <div id="title-header" class="title-header">
+        <h1> PawPost </h1>
+        <h2> Create An Account </h2>
+        <a class="button"> Sign Up </a>
+	<form action="/device-data" method="get">
+		<button type="submit">Click Me</button>
+	</form>
+    </div>
+
+    <div id="main-content" class="main-content">
+        <h3> What is PawPost? </h3>
+        <p> P - Personalized </p>
+        <p> A - All-natural </p>     
+        <p> W - Well-balanced </p>
+        <p> P - Premium quality </p>
+        <p> O - Organic </p>
+        <p> S - Satisfying </p>
+        <p> T - Tailored to your pet's needs </p>
+        
+    </div>
+
+</body>
+
+</html>
+{% endblock %}

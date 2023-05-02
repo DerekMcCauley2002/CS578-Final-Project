@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GPIO Data</title>
+    <script>
+      function refreshData() {
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', '/update_value', true);
+        xhr.responseType = 'json';
+        xhr.onload = function() {
+          if (xhr.status == 200) {
+            var new_val = xhr.response.updated_value.weight;
+            var value = parseFloat(new_val);
+            var formatted_val = value.toFixed(1) + " grams";
+            document.getElementById('data').textContent = formatted_val;
+            document.getElementById('status').textContent = xhr.response.updated_value.status;
+          }
+        };
+        
+        xhr.send();
+      }
+    </script>
+  </head>
+  <body>
+    <h1>GPIO Data</h1>
+    <p>The current weight is: <span id="data">{{ data.weight }}</span></p>
+    <p>The current status is: <span id="status">{{ data.status }}</span></p>
+    <button onclick="refreshData()">Refresh Data</button>
+  </body>
+  
+  
+</html>

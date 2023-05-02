@@ -1,0 +1,51 @@
+/****** TABLET VIEW ******/
+@media only screen and (max-width:768px) {
+    
+    .title-header {
+            padding: 40px;
+        }
+
+    .main-content {
+        width: 400px; 
+    }
+
+}
+
+/****** MOBILE VIEW ******/
+@media only screen and (max-width:390px) {
+
+    .main-content {
+        width: 280px; 
+        padding: 10px;
+    }
+
+    .title-header {
+        margin-top: 174px;
+    }
+
+    h1, h2 {
+        font-size: 1.2em;
+    }
+
+    li {
+        display: block;
+        margin-right: 0;
+        text-align: center;
+        padding: 5px 10px;
+        border-top: 1px solid white;
+    }
+
+    .dropdown {
+        display: block;
+        position: relative;
+        width: 100%;
+        margin-left: 0;
+        padding-top: 0;
+    }
+
+    .main-navigation {
+        padding: 0;
+    }
+    
+}
+

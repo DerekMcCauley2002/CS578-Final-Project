@@ -1,0 +1,37 @@
+{% extends 'navbar.html' %}
+<!DOCTYPE html>
+<html>
+{% block page_content %}
+<head>
+    <title> PawPost </title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='responsive.css') }}">
+
+</head>
+
+<body>
+
+    <div id="title-header" class="title-header">
+        <h1> Set-up Device </h1>
+    </div>
+    <div id="input-form" class="input-form"> <!--bound to change with existing styles-->
+    <body>
+        <form id="device_setup" class="device_setup" action="/device_results" method='POST'>
+            <div style="margin-left: 10%;">
+                <label for="device_id">Device ID:</label>
+                <input type="text" id="device_id" name="Device ID" required>
+                <label for="device_type">Device Type:</label>
+                <select name="device_type" id="device_type" required>
+                        <option selected value="food">Food</option>
+                        <option value="water">Water</option>
+                </select>
+                <br>
+                <label for="pet_name">Pet Name:</label>
+                <input type="text" id="pet_name" name="Pet Name">
+                <input type="submit" id="submit_button" value="Create Device">
+            </div>
+        </form>
+    </body>
+    </div>
+{% endblock %}
